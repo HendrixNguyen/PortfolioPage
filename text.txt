@@ -1,0 +1,20 @@
+ <div class="row">
+                                                <div class="personal-items padd-15">
+                                                    <p>Birthday: <span>February, 11, 2000</span></p>
+                                                </div>
+                                                <div class="personal-items padd-15">
+                                                    <p>Age: <span>21</span></p>
+                                                </div>
+                                                <div class="personal-items padd-15">
+                                                    <p>Website: <span>https://domain.com</span></p>
+                                                </div>
+                                                <div class="personal-items padd-15">
+                                                    <p>Email: <span>www.username@gmail.com</span></p>
+                                                </div>
+                                                <div class="personal-items padd-15">
+                                                    <p>Degree: <span>University of Backgalore</span></p>
+                                                </div>
+                                                <div class="personal-items padd-15">
+                                                    <p>Phone: <span>+84 937 172 242</span></p>
+                                                </div>
+                                            </div>
