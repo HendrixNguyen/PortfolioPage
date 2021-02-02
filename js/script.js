@@ -7,21 +7,27 @@ const filterContainer=document.querySelector(".portfolio-filter"),
       totalFilterBtn = filterBtns.length,
       portfolioItems = document.querySelectorAll(".portfolio-item"),
       totalPortfolioItems = portfolioItems.length;
-      console.log(totalPortfolioItems)
+    //   console.log(totalPortfolioItems)
 
 
     for(let i=0; i<totalFilterBtn; i++){
         filterBtns[i].addEventListener("click",function(){
-            filterContainer.querySelector(".active").classList.remove("active")
-            this.classList.add("active")
-
-            const filterValue=this.getAttribute("data-filter")
+            filterContainer.querySelector(".active").classList.remove("active");
+            this.classList.add("active");
+            const filterValue=this.getAttribute("data-filter");
             for(let k=0; k<totalPortfolioItems; k++){
-                if(filterValue === portfolioItems.getAttribute("data-categor")){
-                    portfolioItems[k].classList.add("active");
+                debugger;
+                if(filterValue === portfolioItems.getAttribute("data-category")){
+                    portfolioItems[k].classList.remove("hide");
+                    portfolioItems[k].classList.add("show")
                 } else{
-                    portfolioItems[k].classList.add("hide")
+                    portfolioItems[k].classList.add("hide");
+                    portfolioItems[k].classList.remove("show");
                 }   
+                if (filterValue === "all"){
+                    portfolioItems[k].classList.remove("hide");
+                    portfolioItems[k].classList.add("show")   
+                }
             }
         })
     }
