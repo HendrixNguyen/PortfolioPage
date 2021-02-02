@@ -637,7 +637,7 @@ Service-section
     display: block;
 }
 
-.portfolio .portfolio-item.hidden{
+.portfolio .portfolio-item.hide{
     display: none;
 }
 
@@ -767,9 +767,11 @@ Service-section
 .lightbox .lightbox-content img{
     height: auto;
     width: auto;
-    max-height: 300px;
+    max-height: 450px;
     max-width: 100%;
     cursor: pointer;
+    display: block;
+    padding: 40px 0 30px;
 }
 
 .lightbox .lightbox-content{
@@ -808,23 +810,24 @@ Service-section
     width: 40px;
     /* background-color: blueviolet; */
     right: 0px;
-    top: -30px;
-    font-size: 16px;
+    top: s0px;
+    font-size: 32px;
     text-align: right;
     color: #ffffff;
     cursor: pointer;
+    line-height: 40px;
 }
 
 .lightbox .lightbox-content .lightbox-caption{
     position: absolute;
     width: 100%;
-    bottom: -22px;
+    bottom: -15px;
     left: 0;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pach: space-between;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 26px;
     color: #ffffff;
     font-size: 400;
 }
@@ -845,10 +848,16 @@ Service-section
     transition: all 0.3s ease;
 }
 
-.lightbox .lightbox-control .prev-item:active,
-.lightbox .lightbox-control .next-item:active{
+.lightbox .lightbox-control .prev-item:hover,
+.lightbox .lightbox-control .next-item:hover{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+}
+
+.lightbox .lightbox-control .prev-item:active,
+.lightbox .lightbox-control .next-item:active{
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .lightbox .lightbox-control .prev-item{
