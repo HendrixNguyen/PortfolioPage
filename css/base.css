@@ -114,6 +114,8 @@ body{
     transition: all 0.3s ease;
     display: inline-block;
     white-space: nowrap;
+    border: none;
+    cursor: pointer;
 }
 /* Aside */
 .aside{
@@ -879,11 +881,12 @@ Service-section
 
 /* Contact Section */
 .contact .contact-info-item{
-    flex: 0 0 33.33%;
     -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
     max-width: 33.33%;
     text-align: center;
     font-size: 25px;
+    margin-bottom: 30px;
 }
 
 .contact .contact-info-item .icon{
@@ -894,5 +897,45 @@ Service-section
     font-size: 40px;
 }
 
-.contact .contact-info-item h4{}
-.contact .contact-info-item p{}
+.contact .contact-info-item h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item p{
+    font-size: 20px;
+    line-height: 25px;
+    color: #504e70;
+    margin: 0;
+    font-weight: 400;
+}
+
+.contact .contact-form{
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width:100%;
+}
+
+.contact .contact-form .col-6{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.contact .contact-form .col-12{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+}
+
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+}
