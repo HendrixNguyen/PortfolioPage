@@ -5,10 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Profile Portfolio</title>
-  <link rel="stylesheet" href="./css/base.css" />
-  <link rel="stylesheet" href="./css/skins/text.css" />
+  <link rel="stylesheet" href="./css/base.css" type="text/css">
+  <!-- <link rel="stylesheet" href="./css/skins/pink.css" type="text/css"> -->
 
-  <script src="https://kit.fontawesome.com/16180a3176.js" crossorigin="anonymous"></script>
+  <!-- Theme Link -->
+  <link rel="stylesheet" class="alternate-styles" title="blue" href="css/skins/blue.css" type="text/css" disable>
+  <link rel="stylesheet" class="alternate-styles" title="pink" href="css/skins/pink.css" type="text/css" disable>
+  <link rel="stylesheet" class="alternate-styles" title="yellow" href="css/skins/yellow.css" type="text/css" disable>
+  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+
+  <!-- <script src="https://kit.fontawesome.com/16180a3176.js" crossorigin="anonymous"></script> -->
 </head>
 
 <body>
@@ -485,8 +491,26 @@
   </div>
   <!-- Lightbox End -->
 
+  <!-- Live Style Switcher  -->
+  <div class="style-switcher">
+    <h4>Style Switcher</h4>
+      <ul>
+        <li><a href="#"  title="pink" style="background-color: deeppink;" onclick="
+        setActiveStyle('pink')"></a></li>
+        <li><a href="#" title="blue" style="background-color: #2195f3" onclick="
+        setActiveStyle('blue')"></a></li>
+        <li><a href="#" title="yellow" style="background-color: #ffb400" onclick="
+        setActiveStyle('yellow')"></a></li>
+      </ul>
+    </h4>
+  </div>
+
   <!-- Template JS -->
   <script src="js/script.js"></script>
+
+  <!-- Style-Switcher JS -->
+  <script src="js/styleSwitcher.js"></script>
+
 </body>
 
 </html>
